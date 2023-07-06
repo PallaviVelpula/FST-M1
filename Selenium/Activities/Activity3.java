@@ -12,7 +12,7 @@ public class Activity3 {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://training-support.net/selenium/login-form");
         System.out.println("Title of the Login page is: " + driver.getTitle());
-        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("admin");
+        driver.findElement(By.xpath("//input[@name='Username']")).sendKeys("admin");
         driver.findElement(By.xpath("//input[@name='Password']")).sendKeys("password");
         driver.findElement(By.xpath("//button[text()='Log in']")).click();
         driver.quit();

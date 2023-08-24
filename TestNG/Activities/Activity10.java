@@ -72,7 +72,7 @@ public class Activity10 {
 
     @DataProvider(name = "Registration")
     public static Object[][] signUpInfo() {
-        String filePath = "src/test/resources/data.xlsx";
+        String filePath = "src/test/resources/activity10.xlsx";
         List<List<String>> data = readExcel(filePath);
         return new Object[][]{
                 {data.get(1).get(1), data.get(1).get(2), data.get(1).get(3), data.get(1).get(4)},
